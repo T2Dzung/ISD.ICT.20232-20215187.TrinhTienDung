@@ -22,7 +22,8 @@ Step 14: Place order successfully <br />
 
 Step 3A: If the inventory quantity is insufficient, software will ask customers to update the cart (go back to Step 1) <br />
 Step 5A: If there are any required fields left blank or invalid information, software will ask customers to update information (go back to Step 4) <br />
-Step 7A: If customer chooses rush order delivery method then check if the order is eligible for the method. If false, software will ask customer to update the delivery information or delivery method (go back to Step 4). If true, requests additional rush order delivery information from the customer (then go to Step 8) <br />
+Step 7A: If customer chooses rush order delivery method but no products are eligible or the delivery address doesn't support rush order delivery, software will ask customer to update the delivery information or delivery method (go back to Step 4) <br />
+Step 7B: If customer chooses rush order delivery method and both the products and delivery address support rush order delivery, software will request additional information from the customer (then go to Step 8) <br />
 Step 9A: If customer selects VNPay, customer need to provide the necessary information as requested by VNPay (then go to Step 10) <br />
 Step 11A: If customer cancels order, payment will be refunded (end use case) <br />
 Step 12A: If product manager rejects the order, payment will be refunded (end use case) <br />
